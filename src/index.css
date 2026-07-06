@@ -1,24 +1,26 @@
 :root {
-  --bg-color: #000000;
-  --surface-color: #0a0a0a;
-  --surface-hover: #111111;
-  --text-primary: #ffffff;
-  --text-secondary: #888888;
-  --border-color: #1a1a1a;
-  --accent-color: #ffffff;
+  /* Warm Dark Mode (Claude-esque) */
+  --bg-color: #1a1a1a;
+  --surface-color: #242424;
+  --surface-hover: #2d2d2d;
+  --text-primary: #f2ece4; /* Creamy instead of pure white */
+  --text-secondary: #9e9a92;
+  --border-color: #363636;
+  --accent-color: #f2ece4;
   
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --cursor-size: 16px;
 }
 
 [data-theme='light'] {
-  --bg-color: #ffffff;
-  --surface-color: #f7f7f7;
-  --surface-hover: #f0f0f0;
-  --text-primary: #000000;
-  --text-secondary: #666666;
-  --border-color: #eaeaea;
-  --accent-color: #000000;
+  /* Warm Light Mode */
+  --bg-color: #f2ece4; /* Creamy instead of pure white */
+  --surface-color: #e8e2d8;
+  --surface-hover: #dfd8cd;
+  --text-primary: #1a1a1a; /* Dark gray instead of pure black */
+  --text-secondary: #66635c;
+  --border-color: #d1cbc0;
+  --accent-color: #1a1a1a;
 }
 
 /* Custom Cursor */
