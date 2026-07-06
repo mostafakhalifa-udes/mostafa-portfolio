@@ -215,7 +215,11 @@ function App() {
             transition={{ type: 'spring', damping: 20 }}
           >
             <div className="sticker-placeholder">
-              <span style={{ fontSize: '2.5rem' }}>🎯</span>
+              <img 
+                src="/profile.jpg" 
+                alt="Mostafa Khalifa" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(100%) contrast(1.1)' }} 
+              />
             </div>
           </motion.div>
           <motion.h1 
