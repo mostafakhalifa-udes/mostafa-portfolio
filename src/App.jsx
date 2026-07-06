@@ -6,6 +6,7 @@ import AlertingCaseStudy from './AlertingCaseStudy';
 import DesignSystemCaseStudy from './DesignSystemCaseStudy';
 import SemanticDriversCaseStudy from './SemanticDriversCaseStudy';
 import GenAIReportingCaseStudy from './GenAIReportingCaseStudy';
+import profilePic from './assets/profile.jpg';
 import './index.css';
 
 const GithubIcon = ({ size = 20 }) => (
@@ -216,9 +217,9 @@ function App() {
           >
             <div className="sticker-placeholder">
               <img 
-                src="/profile.jpg" 
+                src={profilePic} 
                 alt="Mostafa Khalifa" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(100%) contrast(1.1)' }} 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
               />
             </div>
           </motion.div>
