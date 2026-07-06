@@ -219,7 +219,7 @@ function App() {
               <img 
                 src={profilePic} 
                 alt="Mostafa Khalifa" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.5)' }} 
               />
             </div>
           </motion.div>
