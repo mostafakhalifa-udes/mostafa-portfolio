@@ -1,0 +1,82 @@
+.ticket-navigator {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.navigator-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.navigator-gallery {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  /* Hide scrollbar for cleaner look but keep it functional */
+  scrollbar-width: none; 
+}
+
+.navigator-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.navigator-card {
+  flex: 0 0 auto;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navigator-card:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--text-secondary);
+  transform: translateY(-2px);
+}
+
+.nav-ticket-id {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  background: var(--bg-color);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.nav-ticket-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.nav-arrow {
+  margin-top: auto;
+  color: var(--text-secondary);
+  align-self: flex-end;
+  transition: transform 0.2s ease;
+}
+
+.navigator-card:hover .nav-arrow {
+  color: var(--text-primary);
+  transform: translateX(4px);
+}
