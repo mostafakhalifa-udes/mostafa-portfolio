@@ -188,8 +188,8 @@ function App() {
         <div className="header-name">Mostafa Khalifa</div>
         <div className="nav-links">
           <ThemeToggle />
-          <a href="#" aria-label="Email" style={{ display: 'flex', alignItems: 'center' }}><Mail size={20} /></a>
-          <a href="#" aria-label="GitHub" style={{ display: 'flex', alignItems: 'center' }}><GithubIcon size={20} /></a>
+          <a href="mailto:Mustafa10499@gmail.com" aria-label="Email" style={{ display: 'flex', alignItems: 'center' }}><Mail size={20} /></a>
+          <a href="https://github.com/mostafakhalifa-udes" target="_blank" rel="noreferrer" aria-label="GitHub" style={{ display: 'flex', alignItems: 'center' }}><GithubIcon size={20} /></a>
         </div>
       </header>
 
@@ -201,7 +201,7 @@ function App() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUpVariant}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
           <h2>Systems over pages. Clarity over decoration.</h2>
           <p>I design complex data systems and AI workflows for enterprise SaaS.</p>
@@ -224,18 +224,18 @@ function App() {
             </div>
           </motion.div>
           <motion.h1 
-            initial="hidden" animate="visible" variants={fadeUpVariant} transition={{ duration: 0.6, delay: 0.1 }}
+            initial="hidden" animate="visible" variants={fadeUpVariant} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
           >
             Senior Product Designer.
           </motion.h1>
           <motion.p 
-            initial="hidden" animate="visible" variants={fadeUpVariant} transition={{ duration: 0.6, delay: 0.2 }}
+            initial="hidden" animate="visible" variants={fadeUpVariant} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
           >
             I design complex SaaS platforms, focusing on robust design systems, high-density data visualization, and calm, sharp user experiences. Currently building the future of social listening at AIM Technologies.
           </motion.p>
           <motion.div 
             className="hero-actions"
-            initial="hidden" animate="visible" variants={fadeUpVariant} transition={{ duration: 0.6, delay: 0.3 }}
+            initial="hidden" animate="visible" variants={fadeUpVariant} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
           >
             <MagneticButton href="#work" className="btn btn-primary">
               View selected work
@@ -257,7 +257,7 @@ function App() {
           <div className="philosophy-grid">
             <motion.div className="philosophy-item" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant}>
               <h3>Systems Over Pages</h3>
-              <p>I focus on robust design system foundations and canonical token libraries. A good component doesn't just look right on one screen; it scales across an entire SaaS platform predictably.</p>
+              <p>I focus on robust design system foundations and canonical token libraries. A good component doesn&rsquo;t just look right on one screen; it scales across an entire SaaS platform predictably.</p>
             </motion.div>
             <motion.div className="philosophy-item" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant} transition={{ delay: 0.1 }}>
               <h3>Honest &gt; Diplomatic</h3>
@@ -359,7 +359,7 @@ function App() {
       >
         <div className="footer-content">
           <div className="footer-text">
-            <h2>Let's connect.</h2>
+            <h2>Let&rsquo;s connect.</h2>
             <p>Based in Egypt. Open to discussions on systems and SaaS product strategy.</p>
           </div>
           <div className="social-links">
