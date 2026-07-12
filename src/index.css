@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
   /* Warm Dark Mode (Claude-esque) */
   --bg-color: #1a1a1a;
@@ -9,6 +11,7 @@
   --accent-color: #f2ece4;
   
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', serif;
   --cursor-size: 16px;
 }
 
@@ -51,11 +54,11 @@
 }
 
 .custom-cursor.hovering {
-  width: calc(var(--cursor-size) * 3.5);
-  height: calc(var(--cursor-size) * 3.5);
-  background-color: var(--text-secondary);
-  mix-blend-mode: normal;
-  opacity: 0.15;
+  width: calc(var(--cursor-size) * 4);
+  height: calc(var(--cursor-size) * 4);
+  background-color: #fff;
+  mix-blend-mode: difference;
+  opacity: 1;
 }
 
 /* Floating Nav */
@@ -132,20 +135,23 @@
   position: fixed;
   width: 320px;
   height: 200px;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   pointer-events: none;
   z-index: 50;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  transform: translate(-50%, -50%) rotate(0deg);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05),
+              0 32px 64px -12px rgba(0, 0, 0, 0.5),
+              0 16px 32px -16px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  scale: 0.8;
-  transition: opacity 0.3s ease, scale 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  scale: 0.95;
+  transition: opacity 0.4s ease, scale 0.5s cubic-bezier(0.22, 1, 0.36, 1), transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .hover-preview.active {
   opacity: 1;
   scale: 1;
+  transform: translate(-50%, -50%) rotate(2deg);
 }
 
 .hover-preview img {
@@ -166,7 +172,10 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
+}
+
+h1, h2, .header-name {
+  font-family: var(--font-serif);
 }
 
 h1, h2, h3, h4 {
@@ -355,6 +364,14 @@ a:hover {
   font-size: 1.5rem;
   margin-bottom: 48px;
   color: var(--text-secondary);
+}
+
+.ambient-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: background 0.1s ease;
 }
 
 .project-item {

@@ -179,7 +179,13 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div className="container" onMouseMove={handleMouseMove}>
+      <div 
+        className="ambient-glow" 
+        style={{ 
+          background: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, rgba(255,255,255,0.04) 0%, transparent 40vw)`
+        }} 
+      />
       <CustomCursor />
       <FloatingNav />
       
@@ -271,7 +277,7 @@ function App() {
         </section>
 
         {/* Projects Section */}
-        <section id="work" className="projects-section" onMouseMove={handleMouseMove}>
+        <section id="work" className="projects-section">
           <motion.h2 
             className="section-title"
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant}
