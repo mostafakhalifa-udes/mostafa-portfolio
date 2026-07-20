@@ -6,6 +6,7 @@ import AlertingCaseStudy from './AlertingCaseStudy';
 import DesignSystemCaseStudy from './DesignSystemCaseStudy';
 import SemanticDriversCaseStudy from './SemanticDriversCaseStudy';
 import GenAIReportingCaseStudy from './GenAIReportingCaseStudy';
+import PharmacyERPCaseStudy from './PharmacyERPCaseStudy';
 import profilePic from './assets/profile.jpg';
 import './index.css';
 
@@ -56,6 +57,14 @@ const projects = [
     description: 'Maintain and scale the canonical token library and component behaviors across the AIM platform, specifically engineering scalable MetricSplit patterns and Tag structural taxonomies.',
     image: '/customized-widget-baseline.png',
     viewId: 'designsystem'
+  },
+  {
+    id: 5,
+    title: 'Pharmacy ERP SaaS',
+    category: '0-to-1 Product Strategy',
+    description: 'UX strategy and architectural scope mapping for a complex B2B Pharmacy ERP, driving the shift from legacy databases to a role-based, POS-optimized ecosystem.',
+    image: '/ux-process.jpeg',
+    viewId: 'pharmacy-erp'
   }
 ];
 
@@ -171,6 +180,10 @@ function App() {
 
   if (currentView === 'genai') {
     return <GenAIReportingCaseStudy onBack={() => setCurrentView('home')} onNavigate={setCurrentView} />;
+  }
+
+  if (currentView === 'pharmacy-erp') {
+    return <PharmacyERPCaseStudy onBack={() => setCurrentView('home')} onNavigate={setCurrentView} />;
   }
 
   const fadeUpVariant = {

@@ -7,6 +7,7 @@ const ALL_TICKETS = [
   { id: 'alerting', ticketId: 'INS-842', title: 'Alerting System v1.1' },
   { id: 'genai', ticketId: 'INS-REP-01', title: 'Gen AI Reporting' },
   { id: 'designsystem', ticketId: 'INS-DS-1.0', title: 'AIM Design System' },
+  { id: 'pharmacy-erp', ticketId: 'PHARM-01', title: 'Pharmacy ERP SaaS' },
 ];
 
 export default function TicketNavigator({ currentViewId, onNavigate }) {
